@@ -1,0 +1,90 @@
+#screen {
+    overflow: scroll;
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#navbar {
+    display: fixed;
+
+}
+  
+#site-name {
+    display: flex;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+  
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+#navbar li {
+    margin-right: 60px;
+    
+}
+  
+#navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 100px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+}
+  
+#navbar a.active {
+    color: white;
+    background-color: #000; /* Highlight the active page link */
+    border-radius: 8px;
+}
+  
+#navbar a:hover {
+    color: darkgray;
+}
+
+#frontpage {
+    margin-top: 50px; 
+    height: auto;
+    width: auto;
+}
+
+#left-icons {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 10;
+}
+
+#left-icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+#left-icons a:hover {
+    color: #0077b5; /* Example hover color */
+}
+
+#left-icons .material-icons {
+    font-size: 30px;
+    margin-right: 8px;
+}
+
+/* Add a rule for showing the name beside the icon */
+#left-icons a span.material-icons + span {
+    margin-left: 8px;  /* Space between icon and name */
+}

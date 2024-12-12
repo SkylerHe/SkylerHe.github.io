@@ -1,0 +1,29 @@
+{
+    "siteName": "SKYLER HE", 
+    "menuItems": [
+      { "name": "ABOUT", "link": "about.html" },
+      { "name": "PROJECT", "link": "project.html" },
+      { "name": "CERTIFICATION", "link": "certification.html" }
+    ],
+
+    "icons": [
+      {
+        "name": "Resume",
+        "icon": "folder",
+        "link": "resume.html"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/in/yingxinskylerhe/"
+      },
+      {
+        "name": "GitHub",
+        "icon": "github",
+        "link": "https://github.com/SkylerHe"
+      }
+    ]
+}
+
+
+  
