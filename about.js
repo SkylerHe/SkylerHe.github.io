@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Generate the innerHTML for the navbar
         let navbarHTML = `
         <nav id="navbar">
-            <a href="index.html" id="site-name">${siteName}</a>
+            <a href="https://skylerhe.github.io/" id="site-name">${siteName}</a>
             <ul>
         `;
 
