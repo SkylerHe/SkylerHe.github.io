@@ -39,10 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
         icons.forEach((icon) => {
           iconsHTML += `
             <a href="${icon.link}" target="_blank">
-                <span class="material-icons">${icon.icon}</span>${icon.name}
+              <i class="${icon.icon}"></i>
+              <span class="name">${icon.name}</span>
             </a>
           `;
         });
+
 
         // Set the generated HTML for the left-side icons
         leftIconsPlaceholder.innerHTML = iconsHTML;

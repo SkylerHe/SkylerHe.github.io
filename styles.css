@@ -8,6 +8,8 @@
 }
 #navbar {
     display: fixed;
+    height: 100rem;
+    background-color: white;
 
 }
   
@@ -50,41 +52,107 @@
     color: darkgray;
 }
 
-#frontpage {
-    margin-top: 50px; 
-    height: auto;
-    width: auto;
-}
-
+/* Styling for the left icons container */
 #left-icons {
     position: fixed;
-    left: 20px;
-    top: 20px;
+    left: 50px;
+    top: 50%; 
+    transform: translateY(-50%); 
     display: flex;
     flex-direction: column;
     gap: 20px;
     z-index: 10;
 }
 
+/* Styling for the anchor tags inside the icons container */
 #left-icons a {
     text-decoration: none;
     color: black;
     font-size: 20px;
     display: flex;
     align-items: center;
+    position: relative; 
     transition: color 0.3s ease;
 }
 
 #left-icons a:hover {
-    color: #0077b5; /* Example hover color */
+    color: darkgrey; /* Example hover color */
 }
 
-#left-icons .material-icons {
+/* Styling for the Font Awesome icons */
+#left-icons i {
     font-size: 30px;
-    margin-right: 8px;
 }
 
-/* Add a rule for showing the name beside the icon */
-#left-icons a span.material-icons + span {
-    margin-left: 8px;  /* Space between icon and name */
+/* Hide the name by default */
+#left-icons a span.name {
+    opacity: 0;
+    margin-left: 8px; /* Space between icon and name */
+    white-space: nowrap; /* Prevent text wrapping */
+    transition: opacity 0.3s ease, margin-left 0.3s ease;
 }
+
+/* Show the name on hover */
+#left-icons a:hover span.name {
+    opacity: 1;
+    margin-left: 12px; /* Slightly move the text outward when shown */
+}
+
+/* General Layout for the Showcase Section */
+.projects-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1200px; /* Max width for larger screens */
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Each Project Box Style */
+.project {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    margin: 10px;
+}
+
+/* Image Styling */
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Description Styling */
+.description h3 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.description p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Make sure the layout is responsive */
+@media screen and (max-width: 768px) {
+    .project-container {
+        flex-direction: column; /* Stack projects on smaller screens */
+        align-items: center;
+    }
+
+    .project {
+        width: 80%; /* Make each project box take up 80% of the width on small screens */
+    }
+}
+

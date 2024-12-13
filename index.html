@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
@@ -13,8 +13,32 @@
         <div id="left-icons"></div>
         <!-- Navigation bar-->
         <div id="header-placeholder"></div>
-        <!-- Insert the image here -->
-        <img src="p1.png" id="frontpage" style="max-width: 100%; max-height: 100%; object-fit: cover;">
+
+        <!-- Showcase Section for Projects -->
+        <div class="projects-section">
+            <h2>Showcase Projects</h2>
+            
+            <div class="project-container">
+                <!-- Project 1 -->
+                <div class="project">
+                    <img src="p1.png" alt="Project 1 Diagram">
+                    <div class="description">
+                        <h3>Project 1 Description</h3>
+                        <p>This diagram shows the architecture of a custom-built CPU system, including RAM, CPU, and various controllers like Memory, Keyboard, and Speaker controllers.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <img src="p2.png" alt="Project 2 Diagram">
+                    <div class="description">
+                        <h3>Project 2 Description</h3>
+                        <p>This is another project showcasing an interactive keyboard-controller system with RGB LED and hex display controllers, integrated with a speaker system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script src="index.js" type="module"></script>
 </body>

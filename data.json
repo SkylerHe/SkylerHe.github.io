@@ -2,27 +2,33 @@
     "siteName": "SKYLER HE", 
     "menuItems": [
       { "name": "ABOUT", "link": "about.html" },
-      { "name": "PROJECT", "link": "project.html" },
-      { "name": "CERTIFICATION", "link": "certification.html" }
+      { "name": "PROJECT", "link": "project.html" }
+      
     ],
 
     "icons": [
       {
         "name": "Resume",
-        "icon": "folder",
-        "link": "resume.html"
+        "icon": "fa-solid fa-folder",
+        "link": "Resume_ Yingxin (Skyler) He.pdf"
       },
       {
         "name": "LinkedIn",
-        "icon": "linkedin",
+        "icon": "fa-brands fa-linkedin",
         "link": "https://www.linkedin.com/in/yingxinskylerhe/"
       },
       {
         "name": "GitHub",
-        "icon": "github",
+        "icon": "fa-brands fa-github",
         "link": "https://github.com/SkylerHe"
+      },
+      {
+        "name": "Email",
+        "icon": "fas fa-envelope",
+        "link": "mailto:yingxinskyler.he@gmail.com"
       }
     ]
+
 }
 
 
